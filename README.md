@@ -101,4 +101,6 @@ You should see the front-end app appear, with all components displaying error me
 
 # Deploying and running back-end microservice
 
-WRITE YOUR DOCUMENTATION HERE
+## Deploying
+
+All new files have been created from a Windows PC, make sure `migrate.sh` has EOL set to `LF`
