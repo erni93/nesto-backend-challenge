@@ -22,6 +22,7 @@ func (router *BooksRouter) GetBooksHandler(w http.ResponseWriter, r *http.Reques
 	if err != nil {
 		log.Printf("Error reading GetBooks filters: %s", err)
 		response.WriteError(w, ErrInvalidFilter)
+		return
 	}
 
 	books, err := router.Repository.GetBooks(*filters)

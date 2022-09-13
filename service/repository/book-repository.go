@@ -4,6 +4,7 @@ import (
 	"backend-api/database"
 	"backend-api/model"
 	"database/sql"
+	"strconv"
 
 	sq "github.com/Masterminds/squirrel"
 )
@@ -23,15 +24,54 @@ type BookRepository struct {
 }
 
 func (r *BookRepository) GetBooks(filters GetBooksFilters) ([]model.Book, error) {
-	query := sq.Select("*").From("book")
-	query = query.LeftJoin("genre on (book.genre_id = genre.id)")
-	query = query.LeftJoin("author on (book.author_id = author.id)")
-	rows, err := query.RunWith(r.DB).Query()
+	query := buildQuery(filters)
+
+	rows, err := query.RunWith(r.DB).PlaceholderFormat(sq.Dollar).Query()
 	if err != nil {
 		return nil, err
 	}
 
 	return readRows(rows)
+}
+
+func buildQuery(filters GetBooksFilters) sq.SelectBuilder {
+	query := sq.Select("*").From("book")
+	query = query.LeftJoin("genre on (book.genre_id = genre.id)")
+	query = query.LeftJoin("author on (book.author_id = author.id)")
+	query = query.OrderBy("book.rating DESC")
+
+	whereFilters := sq.And{}
+
+	if filters.Genres != nil && len(filters.Genres) > 0 {
+		whereFilters = append(whereFilters, sq.Eq{"book.genre_id": filters.Genres})
+	}
+
+	if filters.Authors != nil && len(filters.Authors) > 0 {
+		whereFilters = append(whereFilters, sq.Eq{"book.author_id": filters.Authors})
+	}
+
+	if filters.MinPages != nil {
+		whereFilters = append(whereFilters, sq.GtOrEq{"book.pages": strconv.Itoa(int(*filters.MinPages))})
+	}
+
+	if filters.MaxPages != nil {
+		whereFilters = append(whereFilters, sq.LtOrEq{"book.pages": strconv.Itoa(int(*filters.MaxPages))})
+	}
+
+	if filters.MinYear != nil {
+		whereFilters = append(whereFilters, sq.GtOrEq{"book.year_published": strconv.Itoa(int(*filters.MinYear))})
+	}
+
+	if filters.MaxYear != nil {
+		whereFilters = append(whereFilters, sq.LtOrEq{"book.year_published": strconv.Itoa(int(*filters.MaxYear))})
+	}
+
+	if filters.Limit != nil {
+		query = query.Limit(uint64(*filters.Limit))
+	}
+
+	query = query.Where(whereFilters)
+	return query
 }
 
 func readRows(rows *sql.Rows) ([]model.Book, error) {
