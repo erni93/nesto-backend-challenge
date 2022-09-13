@@ -1,20 +1,22 @@
 package router
 
 import (
-	"backend-api/model"
+	"backend-api/repository"
 	response "backend-api/router/response"
+	"log"
 	"net/http"
 )
 
 type AuthorsRouter struct {
+	Repository *repository.AuthorRepository
 }
 
 func (router *AuthorsRouter) GetAuthorsHandler(w http.ResponseWriter, r *http.Request) {
-	author := []model.Author{{
-		Id:        1,
-		FirstName: "author-first-name",
-		LastName:  "author-last-name",
-	}}
-
-	response.WriteJsonObject(w, author)
+	authors, err := router.Repository.GetAuthors()
+	if err != nil {
+		log.Printf("Error retrieving authors: %s", err)
+		response.WriteGeneralError(w)
+	} else {
+		response.WriteJsonObject(w, authors)
+	}
 }

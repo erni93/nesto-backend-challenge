@@ -20,7 +20,7 @@ func (r *EraRepository) GetEras() ([]model.Era, error) {
 	eras := make([]model.Era, 0)
 	for rows.Next() {
 		var era model.Era
-		err = rows.Scan(&era.Id, &era.Title, &era.MaxYear, &era.MinYear)
+		err = rows.Scan(&era.Id, &era.Title, &era.MinYear, &era.MaxYear)
 		if err != nil {
 			return nil, err
 		}

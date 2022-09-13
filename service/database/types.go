@@ -17,3 +17,9 @@ func (ni *NullInt32) MarshalJSON() ([]byte, error) {
 	}
 	return json.Marshal(ni.Int32)
 }
+
+type IgnoreColumn struct{}
+
+func (IgnoreColumn) Scan(value interface{}) error {
+	return nil
+}

@@ -17,13 +17,21 @@ func main() {
 	}
 	log.Println("Database connection established")
 
-	authorsRouter := router.AuthorsRouter{}
-	booksRouter := router.BooksRouter{}
+	authorsRouter := router.AuthorsRouter{
+		Repository: &repository.AuthorRepository{DB: db},
+	}
+	booksRouter := router.BooksRouter{
+		Repository: &repository.BookRepository{DB: db},
+	}
 	erasRouter := router.ErasRouter{
 		Repository: &repository.EraRepository{DB: db},
 	}
-	genresRouter := router.GenresRouter{}
-	sizesRouter := router.SizesRouter{}
+	genresRouter := router.GenresRouter{
+		Repository: &repository.GenreRepository{DB: db},
+	}
+	sizesRouter := router.SizesRouter{
+		Repository: &repository.SizeRepository{DB: db},
+	}
 
 	port := ":5001"
 	router := mux.NewRouter()
