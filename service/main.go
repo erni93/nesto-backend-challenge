@@ -1,6 +1,8 @@
 package main
 
 import (
+	"backend-api/database"
+	"backend-api/repository"
 	"backend-api/router"
 	"log"
 	"net/http"
@@ -9,9 +11,17 @@ import (
 )
 
 func main() {
+	db, err := database.GetConnection()
+	if err != nil {
+		panic(err)
+	}
+	log.Println("Database connection established")
+
 	authorsRouter := router.AuthorsRouter{}
 	booksRouter := router.BooksRouter{}
-	erasRouter := router.ErasRouter{}
+	erasRouter := router.ErasRouter{
+		Repository: &repository.EraRepository{DB: db},
+	}
 	genresRouter := router.GenresRouter{}
 	sizesRouter := router.SizesRouter{}
 

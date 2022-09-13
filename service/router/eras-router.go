@@ -1,21 +1,22 @@
 package router
 
 import (
-	"backend-api/model"
+	"backend-api/repository"
 	response "backend-api/router/response"
+	"log"
 	"net/http"
 )
 
 type ErasRouter struct {
+	Repository *repository.EraRepository
 }
 
 func (router *ErasRouter) GetErasHandler(w http.ResponseWriter, r *http.Request) {
-	eras := []model.Era{{
-		Id:      1,
-		Title:   "eras-test",
-		MinYear: 1950,
-		MaxYear: 2000,
-	}}
-
-	response.WriteJsonObject(w, eras)
+	eras, err := router.Repository.GetEras()
+	if err != nil {
+		log.Printf("Error retrieving eras: %s", err)
+		response.WriteGeneralError(w)
+	} else {
+		response.WriteJsonObject(w, eras)
+	}
 }
