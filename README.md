@@ -101,6 +101,26 @@ You should see the front-end app appear, with all components displaying error me
 
 # Deploying and running back-end microservice
 
+## Description
+
+This back-end microservice has been developed using Go as programming language
+
+There are some integration tests at `main_test.go`, those tests are executed directly against the database.
+
+You will need some environment variables defined in your machine in order to be able to connect with the database, check `docker-compose.yml` for some examples (backend-api configuration)
+
+How to run all tests
+
+```bash
+$ go -timeout 30s -run ^(TestGetAuthors|TestGetBooks|TestGetBooksWithFilters|TestGetEras|TestGetGenres|TestGetSizes)$ backend-api
+```
+
 ## Deploying
 
-All new files have been created from a Windows PC, make sure `migrate.sh` has EOL set to `LF`
+If you are using Windows PC, make sure `migrate.sh` has EOL set to `LF`
+
+This backend microservice has been added to docker-compose, just run 
+
+```bash
+$ docker-compose up --build
+```
