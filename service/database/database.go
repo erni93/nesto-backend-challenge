@@ -9,7 +9,7 @@ import (
 
 // This can be loaded using env variables from docker-compose
 const (
-	host     = "localhost"
+	host     = "postgresql"
 	port     = 5432
 	user     = "postgres"
 	password = "password123"
