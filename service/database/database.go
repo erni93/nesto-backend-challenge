@@ -3,21 +3,21 @@ package database
 import (
 	"database/sql"
 	"fmt"
+	"os"
 
 	_ "github.com/lib/pq"
 )
 
-// This can be loaded using env variables from docker-compose
-const (
-	host     = "postgresql"
-	port     = 5432
-	user     = "postgres"
-	password = "password123"
-	dbname   = "readcommend"
+var (
+	host     = os.Getenv("PSQL-HOST")
+	port     = os.Getenv("PSQL-PORT")
+	user     = os.Getenv("PSQL-USER")
+	password = os.Getenv("PSQL-PASSWORD")
+	dbname   = os.Getenv("PSQL-DBNAME")
 )
 
 func GetConnection() (*sql.DB, error) {
-	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
+	psqlInfo := fmt.Sprintf("host=%s port=%s user=%s "+
 		"password=%s dbname=%s sslmode=disable",
 		host, port, user, password, dbname)
 	db, err := sql.Open("postgres", psqlInfo)

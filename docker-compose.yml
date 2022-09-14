@@ -13,6 +13,12 @@ services:
       - "5001:5001"
     depends_on:
       - postgresql
+    environment:
+      - PSQL-HOST=postgresql
+      - PSQL-PORT=5432
+      - PSQL-USER=postgres
+      - PSQL-PASSWORD=password123
+      - PSQL-DBNAME=readcommend
   postgresql:
     build: 
       context: ./db-migrations
