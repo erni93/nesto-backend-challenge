@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "title": "Any"
+    },
+    {
+        "id": 2,
+        "title": "Short story – up to 35 pages",
+        "maxPages": 34
+    },
+    {
+        "id": 3,
+        "title": "Novelette – 35 to 85 pages",
+        "minPages": 35,
+        "maxPages": 84
+    },
+    {
+        "id": 4,
+        "title": "Novella – 85 to 200 pages",
+        "minPages": 85,
+        "maxPages": 199
+    },
+    {
+        "id": 5,
+        "title": "Novel – 200 to 500 pages",
+        "minPages": 200,
+        "maxPages": 499
+    },
+    {
+        "id": 6,
+        "title": "Brick – 500 to 800 pages",
+        "minPages": 500,
+        "maxPages": 799
+    },
+    {
+        "id": 7,
+        "title": "Monument – 800 pages and up",
+        "minPages": 800
+    }
+]

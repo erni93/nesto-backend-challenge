@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Young Adult"
+    },
+    {
+        "id": 2,
+        "title": "SciFi/Fantasy"
+    },
+    {
+        "id": 3,
+        "title": "Romance"
+    },
+    {
+        "id": 4,
+        "title": "Nonfiction"
+    },
+    {
+        "id": 5,
+        "title": "Mystery"
+    },
+    {
+        "id": 6,
+        "title": "Memoir"
+    },
+    {
+        "id": 7,
+        "title": "Fiction"
+    },
+    {
+        "id": 8,
+        "title": "Childrens"
+    }
+]

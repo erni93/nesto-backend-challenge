@@ -7,7 +7,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
-// This can be load from env variables from docker-compose
+// This can be loaded using env variables from docker-compose
 const (
 	host     = "localhost"
 	port     = 5432

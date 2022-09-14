@@ -1,0 +1,930 @@
+[
+    {
+        "id": 12,
+        "yearPublished": 2007,
+        "rating": 4.77,
+        "pages": 542,
+        "title": "Can I Be Honest?",
+        "genre": {
+            "id": 1,
+            "title": "Young Adult"
+        },
+        "author": {
+            "id": 11,
+            "firstName": "Charles",
+            "lastName": "Fenimore"
+        }
+    },
+    {
+        "id": 32,
+        "yearPublished": 1935,
+        "rating": 4.76,
+        "pages": 449,
+        "title": "9803 North Millworks Road",
+        "genre": {
+            "id": 5,
+            "title": "Mystery"
+        },
+        "author": {
+            "id": 10,
+            "firstName": "Carolyn",
+            "lastName": "Segal"
+        }
+    },
+    {
+        "id": 27,
+        "yearPublished": 2020,
+        "rating": 4.76,
+        "pages": 594,
+        "title": "Muddy Waters",
+        "genre": {
+            "id": 3,
+            "title": "Romance"
+        },
+        "author": {
+            "id": 30,
+            "firstName": "Lynne",
+            "lastName": "Danticat"
+        }
+    },
+    {
+        "id": 57,
+        "yearPublished": 1989,
+        "rating": 4.71,
+        "pages": 67,
+        "title": "We're Sisters and We Kinda Like Each Other",
+        "genre": {
+            "id": 6,
+            "title": "Memoir"
+        },
+        "author": {
+            "id": 33,
+            "firstName": "Patricia",
+            "lastName": "Hazzard"
+        }
+    },
+    {
+        "id": 31,
+        "yearPublished": 1957,
+        "rating": 4.66,
+        "pages": 886,
+        "title": "Natural Pamplemousse",
+        "genre": {
+            "id": 4,
+            "title": "Nonfiction"
+        },
+        "author": {
+            "id": 35,
+            "firstName": "Phoebe",
+            "lastName": "Brown"
+        }
+    },
+    {
+        "id": 52,
+        "yearPublished": 1977,
+        "rating": 4.62,
+        "pages": 90,
+        "title": "The Seawitch Sings",
+        "genre": {
+            "id": 3,
+            "title": "Romance"
+        },
+        "author": {
+            "id": 30,
+            "firstName": "Lynne",
+            "lastName": "Danticat"
+        }
+    },
+    {
+        "id": 56,
+        "yearPublished": 1986,
+        "rating": 4.6,
+        "pages": 867,
+        "title": "Who Did You Think You Were Kidding?",
+        "genre": {
+            "id": 6,
+            "title": "Memoir"
+        },
+        "author": {
+            "id": 34,
+            "firstName": "Philip",
+            "lastName": "Antrim"
+        }
+    },
+    {
+        "id": 53,
+        "yearPublished": 1985,
+        "rating": 4.54,
+        "pages": 331,
+        "title": "Turn Left Til You Get There",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 26,
+            "firstName": "Kris",
+            "lastName": "Elegant"
+        }
+    },
+    {
+        "id": 8,
+        "yearPublished": 1952,
+        "rating": 4.51,
+        "pages": 796,
+        "title": "Banana Slug and the Glass Half Full",
+        "genre": {
+            "id": 8,
+            "title": "Childrens"
+        },
+        "author": {
+            "id": 17,
+            "firstName": "Gloria",
+            "lastName": "Green"
+        }
+    },
+    {
+        "id": 55,
+        "yearPublished": 1963,
+        "rating": 4.44,
+        "pages": 146,
+        "title": "Whither Thou Goest",
+        "genre": {
+            "id": 3,
+            "title": "Romance"
+        },
+        "author": {
+            "id": 30,
+            "firstName": "Lynne",
+            "lastName": "Danticat"
+        }
+    },
+    {
+        "id": 9,
+        "yearPublished": 2006,
+        "rating": 4.43,
+        "pages": 70,
+        "title": "Banana Slug and the Mossy Rock",
+        "genre": {
+            "id": 8,
+            "title": "Childrens"
+        },
+        "author": {
+            "id": 31,
+            "firstName": "Malin",
+            "lastName": "Wolff"
+        }
+    },
+    {
+        "id": 23,
+        "yearPublished": 2016,
+        "rating": 4.27,
+        "pages": 26,
+        "title": "Kalakalal Avenue",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 16,
+            "firstName": "Elmer",
+            "lastName": "Komroff"
+        }
+    },
+    {
+        "id": 16,
+        "yearPublished": 1946,
+        "rating": 4.24,
+        "pages": 38,
+        "title": "Dust on the Rim",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 24,
+            "firstName": "Kathy",
+            "lastName": "Yglesias"
+        }
+    },
+    {
+        "id": 44,
+        "yearPublished": 1945,
+        "rating": 4.22,
+        "pages": 570,
+        "title": "Tales of the Compass",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 24,
+            "firstName": "Kathy",
+            "lastName": "Yglesias"
+        }
+    },
+    {
+        "id": 24,
+        "yearPublished": 1967,
+        "rating": 4.13,
+        "pages": 158,
+        "title": "Lace and Brandy",
+        "genre": {
+            "id": 3,
+            "title": "Romance"
+        },
+        "author": {
+            "id": 30,
+            "firstName": "Lynne",
+            "lastName": "Danticat"
+        }
+    },
+    {
+        "id": 21,
+        "yearPublished": 1972,
+        "rating": 4.11,
+        "pages": 766,
+        "title": "Inconvenient Confessions: a 6",
+        "genre": {
+            "id": 6,
+            "title": "Memoir"
+        },
+        "author": {
+            "id": 32,
+            "firstName": "Oliver",
+            "lastName": "Lowry"
+        }
+    },
+    {
+        "id": 28,
+        "yearPublished": 1958,
+        "rating": 3.96,
+        "pages": 537,
+        "title": "Not to Gossip, But",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 17,
+            "firstName": "Gloria",
+            "lastName": "Green"
+        }
+    },
+    {
+        "id": 45,
+        "yearPublished": 1979,
+        "rating": 3.95,
+        "pages": 349,
+        "title": "The Elephant House",
+        "genre": {
+            "id": 4,
+            "title": "Nonfiction"
+        },
+        "author": {
+            "id": 22,
+            "firstName": "John W.",
+            "lastName": "Spanogle"
+        }
+    },
+    {
+        "id": 15,
+        "yearPublished": 1931,
+        "rating": 3.94,
+        "pages": 43,
+        "title": "The Deep Grey",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 37,
+            "firstName": "Robert",
+            "lastName": "Plimpton"
+        }
+    },
+    {
+        "id": 29,
+        "yearPublished": 2004,
+        "rating": 3.87,
+        "pages": 347,
+        "title": "Nothing But Capers",
+        "genre": {
+            "id": 4,
+            "title": "Nonfiction"
+        },
+        "author": {
+            "id": 1,
+            "firstName": "Wendell",
+            "lastName": "Stackhouse"
+        }
+    },
+    {
+        "id": 13,
+        "yearPublished": 1944,
+        "rating": 3.8,
+        "pages": 155,
+        "title": "Concerning Prophecy",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 18,
+            "firstName": "Grace",
+            "lastName": "Harrison"
+        }
+    },
+    {
+        "id": 39,
+        "yearPublished": 1989,
+        "rating": 3.77,
+        "pages": 499,
+        "title": "Say it with Snap!",
+        "genre": {
+            "id": 4,
+            "title": "Nonfiction"
+        },
+        "author": {
+            "id": 22,
+            "firstName": "John W.",
+            "lastName": "Spanogle"
+        }
+    },
+    {
+        "id": 18,
+        "yearPublished": 1952,
+        "rating": 3.74,
+        "pages": 16,
+        "title": "Heliotrope Pajamas",
+        "genre": {
+            "id": 8,
+            "title": "Childrens"
+        },
+        "author": {
+            "id": 31,
+            "firstName": "Malin",
+            "lastName": "Wolff"
+        }
+    },
+    {
+        "id": 7,
+        "yearPublished": 1989,
+        "rating": 3.64,
+        "pages": 558,
+        "title": "Banana Slug and Xyr Friends",
+        "genre": {
+            "id": 8,
+            "title": "Childrens"
+        },
+        "author": {
+            "id": 20,
+            "firstName": "Hillary",
+            "lastName": "Barnhardt"
+        }
+    },
+    {
+        "id": 22,
+        "yearPublished": 1956,
+        "rating": 3.55,
+        "pages": 305,
+        "title": "It's Never Just a Glass",
+        "genre": {
+            "id": 1,
+            "title": "Young Adult"
+        },
+        "author": {
+            "id": 28,
+            "firstName": "Leonard",
+            "lastName": "Nabokov"
+        }
+    },
+    {
+        "id": 19,
+        "yearPublished": 1995,
+        "rating": 3.42,
+        "pages": 417,
+        "title": "Hashtag QuokkaSelfie",
+        "genre": {
+            "id": 4,
+            "title": "Nonfiction"
+        },
+        "author": {
+            "id": 27,
+            "firstName": "Langston",
+            "lastName": "Lippman"
+        }
+    },
+    {
+        "id": 20,
+        "yearPublished": 2011,
+        "rating": 3.37,
+        "pages": 677,
+        "title": "Interrobangs for All",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 16,
+            "firstName": "Elmer",
+            "lastName": "Komroff"
+        }
+    },
+    {
+        "id": 4,
+        "yearPublished": 1954,
+        "rating": 3.3,
+        "pages": 183,
+        "title": "And I Said Yes",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 16,
+            "firstName": "Elmer",
+            "lastName": "Komroff"
+        }
+    },
+    {
+        "id": 40,
+        "yearPublished": 1933,
+        "rating": 3.28,
+        "pages": 453,
+        "title": "Soft, Pliable Truth",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 38,
+            "firstName": "Robert",
+            "lastName": "Milofsky"
+        }
+    },
+    {
+        "id": 38,
+        "yearPublished": 1997,
+        "rating": 3.24,
+        "pages": 12,
+        "title": "Some Eggs or Something?",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 29,
+            "firstName": "Lori",
+            "lastName": "Kaan"
+        }
+    },
+    {
+        "id": 30,
+        "yearPublished": 1978,
+        "rating": 3.16,
+        "pages": 99,
+        "title": "No More Lightning",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 11,
+            "firstName": "Charles",
+            "lastName": "Fenimore"
+        }
+    },
+    {
+        "id": 46,
+        "yearPublished": 2004,
+        "rating": 3.04,
+        "pages": 731,
+        "title": "The Winchcombe Railway Museum Heist",
+        "genre": {
+            "id": 5,
+            "title": "Mystery"
+        },
+        "author": {
+            "id": 10,
+            "firstName": "Carolyn",
+            "lastName": "Segal"
+        }
+    },
+    {
+        "id": 14,
+        "yearPublished": 1993,
+        "rating": 3.02,
+        "pages": 100,
+        "title": "Don't Check your Ego",
+        "genre": {
+            "id": 4,
+            "title": "Nonfiction"
+        },
+        "author": {
+            "id": 36,
+            "firstName": "R.M.",
+            "lastName": "Larner"
+        }
+    },
+    {
+        "id": 48,
+        "yearPublished": 1988,
+        "rating": 2.83,
+        "pages": 115,
+        "title": "The Thing Is",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 17,
+            "firstName": "Gloria",
+            "lastName": "Green"
+        }
+    },
+    {
+        "id": 42,
+        "yearPublished": 2000,
+        "rating": 2.71,
+        "pages": 721,
+        "title": "The Spark and The Ashes",
+        "genre": {
+            "id": 1,
+            "title": "Young Adult"
+        },
+        "author": {
+            "id": 39,
+            "firstName": "Ursula",
+            "lastName": "Karénine"
+        }
+    },
+    {
+        "id": 6,
+        "yearPublished": 1983,
+        "rating": 2.53,
+        "pages": 527,
+        "title": "Banana Slug and the Lost Cow",
+        "genre": {
+            "id": 8,
+            "title": "Childrens"
+        },
+        "author": {
+            "id": 20,
+            "firstName": "Hillary",
+            "lastName": "Barnhardt"
+        }
+    },
+    {
+        "id": 17,
+        "yearPublished": 1954,
+        "rating": 2.48,
+        "pages": 887,
+        "title": "Did You Hear?",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 30,
+            "firstName": "Lynne",
+            "lastName": "Danticat"
+        }
+    },
+    {
+        "id": 43,
+        "yearPublished": 1986,
+        "rating": 2.43,
+        "pages": 667,
+        "title": "Thatchwork Cottage",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 9,
+            "firstName": "Burton",
+            "lastName": "Malamud"
+        }
+    },
+    {
+        "id": 35,
+        "yearPublished": 2005,
+        "rating": 2.42,
+        "pages": 318,
+        "title": "Quiddity and Quoddity",
+        "genre": {
+            "id": 1,
+            "title": "Young Adult"
+        },
+        "author": {
+            "id": 21,
+            "firstName": "Jill",
+            "lastName": "Hergesheimer"
+        }
+    },
+    {
+        "id": 50,
+        "yearPublished": 2006,
+        "rating": 2.37,
+        "pages": 264,
+        "title": "The Scent of Oranges",
+        "genre": {
+            "id": 3,
+            "title": "Romance"
+        },
+        "author": {
+            "id": 30,
+            "firstName": "Lynne",
+            "lastName": "Danticat"
+        }
+    },
+    {
+        "id": 54,
+        "yearPublished": 2018,
+        "rating": 2.26,
+        "pages": 16,
+        "title": "The Triscanipt",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 39,
+            "firstName": "Ursula",
+            "lastName": "Karénine"
+        }
+    },
+    {
+        "id": 2,
+        "yearPublished": 1999,
+        "rating": 2.13,
+        "pages": 619,
+        "title": "Adventures of Kaya",
+        "genre": {
+            "id": 1,
+            "title": "Young Adult"
+        },
+        "author": {
+            "id": 40,
+            "firstName": "Ward",
+            "lastName": "Haigh"
+        }
+    },
+    {
+        "id": 34,
+        "yearPublished": 2020,
+        "rating": 2.11,
+        "pages": 277,
+        "title": "Portmeirion",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 7,
+            "firstName": "Bianca",
+            "lastName": "Thompson"
+        }
+    },
+    {
+        "id": 41,
+        "yearPublished": 2010,
+        "rating": 2.09,
+        "pages": 225,
+        "title": "She Also Tottered",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 38,
+            "firstName": "Robert",
+            "lastName": "Milofsky"
+        }
+    },
+    {
+        "id": 49,
+        "yearPublished": 1970,
+        "rating": 1.95,
+        "pages": 418,
+        "title": "The Mallemaroking",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 7,
+            "firstName": "Bianca",
+            "lastName": "Thompson"
+        }
+    },
+    {
+        "id": 5,
+        "yearPublished": 1960,
+        "rating": 1.88,
+        "pages": 205,
+        "title": "Ballinby Boys",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 4,
+            "firstName": "Arthur",
+            "lastName": "McCrumb"
+        }
+    },
+    {
+        "id": 37,
+        "yearPublished": 1949,
+        "rating": 1.84,
+        "pages": 196,
+        "title": "Saint Esme",
+        "genre": {
+            "id": 3,
+            "title": "Romance"
+        },
+        "author": {
+            "id": 30,
+            "firstName": "Lynne",
+            "lastName": "Danticat"
+        }
+    },
+    {
+        "id": 26,
+        "yearPublished": 1985,
+        "rating": 1.72,
+        "pages": 214,
+        "title": "(im)Mortality",
+        "genre": {
+            "id": 1,
+            "title": "Young Adult"
+        },
+        "author": {
+            "id": 12,
+            "firstName": "Clifford",
+            "lastName": "Wolitzer"
+        }
+    },
+    {
+        "id": 25,
+        "yearPublished": 1983,
+        "rating": 1.64,
+        "pages": 320,
+        "title": "Land Water Sky Space",
+        "genre": {
+            "id": 4,
+            "title": "Nonfiction"
+        },
+        "author": {
+            "id": 15,
+            "firstName": "Elizabeth",
+            "lastName": "Herbach"
+        }
+    },
+    {
+        "id": 33,
+        "yearPublished": 2014,
+        "rating": 1.63,
+        "pages": 374,
+        "title": "Post Alley",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 9,
+            "firstName": "Burton",
+            "lastName": "Malamud"
+        }
+    },
+    {
+        "id": 1,
+        "yearPublished": 1972,
+        "rating": 1.62,
+        "pages": 169,
+        "title": "Alanna Saves the Day",
+        "genre": {
+            "id": 8,
+            "title": "Childrens"
+        },
+        "author": {
+            "id": 6,
+            "firstName": "Bernard",
+            "lastName": "Hopf"
+        }
+    },
+    {
+        "id": 36,
+        "yearPublished": 1930,
+        "rating": 1.6,
+        "pages": 59,
+        "title": "Rystwyth",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 7,
+            "firstName": "Bianca",
+            "lastName": "Thompson"
+        }
+    },
+    {
+        "id": 47,
+        "yearPublished": 1986,
+        "rating": 1.59,
+        "pages": 842,
+        "title": "The Startling End of Mr. Hidhoo",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 23,
+            "firstName": "Jonathan",
+            "lastName": "Kotzwinkle"
+        }
+    },
+    {
+        "id": 10,
+        "yearPublished": 1932,
+        "rating": 1.2,
+        "pages": 202,
+        "title": "Burnished Silver",
+        "genre": {
+            "id": 3,
+            "title": "Romance"
+        },
+        "author": {
+            "id": 30,
+            "firstName": "Lynne",
+            "lastName": "Danticat"
+        }
+    },
+    {
+        "id": 3,
+        "yearPublished": 1976,
+        "rating": 1.14,
+        "pages": 258,
+        "title": "A Horrible Human with the Habits of a Monster",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 25,
+            "firstName": "Kenneth",
+            "lastName": "Douglas"
+        }
+    },
+    {
+        "id": 11,
+        "yearPublished": 1942,
+        "rating": 1.08,
+        "pages": 791,
+        "title": "Cimornul",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 21,
+            "firstName": "Jill",
+            "lastName": "Hergesheimer"
+        }
+    },
+    {
+        "id": 58,
+        "yearPublished": 1981,
+        "rating": 1.01,
+        "pages": 287,
+        "title": "Zero over Twelve",
+        "genre": {
+            "id": 5,
+            "title": "Mystery"
+        },
+        "author": {
+            "id": 9,
+            "firstName": "Burton",
+            "lastName": "Malamud"
+        }
+    },
+    {
+        "id": 51,
+        "yearPublished": 1992,
+        "rating": 1,
+        "pages": 509,
+        "title": "the life and times of an utterly inconsequential person",
+        "genre": {
+            "id": 7,
+            "title": "Fiction"
+        },
+        "author": {
+            "id": 14,
+            "firstName": "David",
+            "lastName": "Beam"
+        }
+    }
+]

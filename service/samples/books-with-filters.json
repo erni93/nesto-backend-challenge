@@ -1,0 +1,18 @@
+[
+    {
+        "id": 11,
+        "yearPublished": 1942,
+        "rating": 1.08,
+        "pages": 791,
+        "title": "Cimornul",
+        "genre": {
+            "id": 2,
+            "title": "SciFi/Fantasy"
+        },
+        "author": {
+            "id": 21,
+            "firstName": "Jill",
+            "lastName": "Hergesheimer"
+        }
+    }
+]

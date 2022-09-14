@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Any"
+    },
+    {
+        "id": 2,
+        "title": "Classic",
+        "maxYear": 1969
+    },
+    {
+        "id": 3,
+        "title": "Modern",
+        "minYear": 1970
+    }
+]
