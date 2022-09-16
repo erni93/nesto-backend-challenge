@@ -74,7 +74,10 @@ func buildQuery(filters GetBooksFilters) sq.SelectBuilder {
 		query = query.Limit(uint64(*filters.Limit))
 	}
 
-	query = query.Where(whereFilters)
+	if len(whereFilters) > 0 {
+		query = query.Where(whereFilters)
+	}
+
 	return query
 }
 
