@@ -15,7 +15,7 @@ func TestGetSizes(t *testing.T) {
 	defer db.Close()
 
 	rs := mock.NewRows([]string{"id", "title", "min_pages", "max_pages"})
-	rs.AddRow(1, "any", nil, nil)
+	rs.AddRow(1, "Any", nil, nil)
 	rs.AddRow(2, "Short story – up to 35 pages", 35, 84)
 
 	mock.ExpectQuery("SELECT (.+) FROM size").WillReturnRows(rs)
@@ -34,7 +34,7 @@ func TestGetSizes(t *testing.T) {
 		want any
 	}{
 		{sizes[0].Id, int64(1)},
-		{sizes[0].Title, "any"},
+		{sizes[0].Title, "Any"},
 		{sizes[0].MinPages, (*database.NullInt32)(nil)},
 		{sizes[0].MaxPages, (*database.NullInt32)(nil)},
 		{sizes[1].Id, int64(2)},
