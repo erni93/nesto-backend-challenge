@@ -19,11 +19,15 @@ type GetBooksFilters struct {
 	Limit    *int32
 }
 
-type BookRepository struct {
+type BookRepository interface {
+	GetBooks(filters GetBooksFilters) ([]model.Book, error)
+}
+
+type BookRepositoryDB struct {
 	DB *sql.DB
 }
 
-func (r *BookRepository) GetBooks(filters GetBooksFilters) ([]model.Book, error) {
+func (r *BookRepositoryDB) GetBooks(filters GetBooksFilters) ([]model.Book, error) {
 	query := buildQuery(filters)
 
 	rows, err := query.RunWith(r.DB).PlaceholderFormat(sq.Dollar).Query()

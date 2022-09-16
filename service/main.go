@@ -18,19 +18,19 @@ func main() {
 	log.Println("Database connection established")
 
 	authorsRouter := router.AuthorsRouter{
-		Repository: &repository.AuthorRepository{DB: db},
+		Repository: &repository.AuthorRepositoryDB{DB: db},
 	}
 	booksRouter := router.BooksRouter{
-		Repository: &repository.BookRepository{DB: db},
+		Repository: &repository.BookRepositoryDB{DB: db},
 	}
 	erasRouter := router.ErasRouter{
-		Repository: &repository.EraRepository{DB: db},
+		Repository: &repository.EraRepositoryDB{DB: db},
 	}
 	genresRouter := router.GenresRouter{
-		Repository: &repository.GenreRepository{DB: db},
+		Repository: &repository.GenreRepositoryDB{DB: db},
 	}
 	sizesRouter := router.SizesRouter{
-		Repository: &repository.SizeRepository{DB: db},
+		Repository: &repository.SizeRepositoryDB{DB: db},
 	}
 
 	port := ":5001"

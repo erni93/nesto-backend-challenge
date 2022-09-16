@@ -8,7 +8,7 @@ import (
 )
 
 type GenresRouter struct {
-	Repository *repository.GenreRepository
+	Repository repository.GenreRepository
 }
 
 func (router *GenresRouter) GetGenresHandler(w http.ResponseWriter, r *http.Request) {

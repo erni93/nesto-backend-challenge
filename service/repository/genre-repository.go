@@ -7,11 +7,15 @@ import (
 	sq "github.com/Masterminds/squirrel"
 )
 
-type GenreRepository struct {
+type GenreRepository interface {
+	GetGenres() ([]model.Genre, error)
+}
+
+type GenreRepositoryDB struct {
 	DB *sql.DB
 }
 
-func (r *GenreRepository) GetGenres() ([]model.Genre, error) {
+func (r *GenreRepositoryDB) GetGenres() ([]model.Genre, error) {
 	rows, err := sq.Select("*").From("genre").RunWith(r.DB).Query()
 	if err != nil {
 		return nil, err

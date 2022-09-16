@@ -14,7 +14,7 @@ var (
 )
 
 type BooksRouter struct {
-	Repository *repository.BookRepository
+	Repository repository.BookRepository
 }
 
 func (router *BooksRouter) GetBooksHandler(w http.ResponseWriter, r *http.Request) {

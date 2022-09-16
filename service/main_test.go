@@ -38,7 +38,7 @@ func TestGetAuthors(t *testing.T) {
 	}
 
 	authorsRouter := router.AuthorsRouter{
-		Repository: &repository.AuthorRepository{DB: db},
+		Repository: &repository.AuthorRepositoryDB{DB: db},
 	}
 
 	req, err := http.NewRequest("GET", "/api/v1/authors", nil)
@@ -74,7 +74,7 @@ func TestGetBooks(t *testing.T) {
 	}
 
 	booksRouter := router.BooksRouter{
-		Repository: &repository.BookRepository{DB: db},
+		Repository: &repository.BookRepositoryDB{DB: db},
 	}
 
 	req, err := http.NewRequest("GET", "/api/v1/books", nil)
@@ -110,7 +110,7 @@ func TestGetBooksWithFilters(t *testing.T) {
 	}
 
 	booksRouter := router.BooksRouter{
-		Repository: &repository.BookRepository{DB: db},
+		Repository: &repository.BookRepositoryDB{DB: db},
 	}
 
 	req, err := http.NewRequest("GET", "/api/v1/books", nil)
@@ -154,7 +154,7 @@ func TestGetEras(t *testing.T) {
 	}
 
 	erasRouter := router.ErasRouter{
-		Repository: &repository.EraRepository{DB: db},
+		Repository: &repository.EraRepositoryDB{DB: db},
 	}
 
 	req, err := http.NewRequest("GET", "/api/v1/eras", nil)
@@ -190,7 +190,7 @@ func TestGetGenres(t *testing.T) {
 	}
 
 	genresRouter := router.GenresRouter{
-		Repository: &repository.GenreRepository{DB: db},
+		Repository: &repository.GenreRepositoryDB{DB: db},
 	}
 
 	req, err := http.NewRequest("GET", "/api/v1/genres", nil)
@@ -226,7 +226,7 @@ func TestGetSizes(t *testing.T) {
 	}
 
 	sizesRouter := router.SizesRouter{
-		Repository: &repository.SizeRepository{DB: db},
+		Repository: &repository.SizeRepositoryDB{DB: db},
 	}
 
 	req, err := http.NewRequest("GET", "/api/v1/sizes", nil)

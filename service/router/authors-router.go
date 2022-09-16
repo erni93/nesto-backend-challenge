@@ -8,7 +8,7 @@ import (
 )
 
 type AuthorsRouter struct {
-	Repository *repository.AuthorRepository
+	Repository repository.AuthorRepository
 }
 
 func (router *AuthorsRouter) GetAuthorsHandler(w http.ResponseWriter, r *http.Request) {

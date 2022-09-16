@@ -7,11 +7,15 @@ import (
 	sq "github.com/Masterminds/squirrel"
 )
 
-type AuthorRepository struct {
+type AuthorRepository interface {
+	GetAuthors() ([]model.Author, error)
+}
+
+type AuthorRepositoryDB struct {
 	DB *sql.DB
 }
 
-func (r *AuthorRepository) GetAuthors() ([]model.Author, error) {
+func (r *AuthorRepositoryDB) GetAuthors() ([]model.Author, error) {
 	rows, err := sq.Select("*").From("author").RunWith(r.DB).Query()
 	if err != nil {
 		return nil, err

@@ -7,11 +7,15 @@ import (
 	sq "github.com/Masterminds/squirrel"
 )
 
-type SizeRepository struct {
+type SizeRepository interface {
+	GetSizes() ([]model.Size, error)
+}
+
+type SizeRepositoryDB struct {
 	DB *sql.DB
 }
 
-func (r *SizeRepository) GetSizes() ([]model.Size, error) {
+func (r *SizeRepositoryDB) GetSizes() ([]model.Size, error) {
 	rows, err := sq.Select("*").From("size").RunWith(r.DB).Query()
 	if err != nil {
 		return nil, err

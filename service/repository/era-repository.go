@@ -7,11 +7,15 @@ import (
 	sq "github.com/Masterminds/squirrel"
 )
 
-type EraRepository struct {
+type EraRepository interface {
+	GetEras() ([]model.Era, error)
+}
+
+type EraRepositoryDB struct {
 	DB *sql.DB
 }
 
-func (r *EraRepository) GetEras() ([]model.Era, error) {
+func (r *EraRepositoryDB) GetEras() ([]model.Era, error) {
 	rows, err := sq.Select("*").From("era").RunWith(r.DB).Query()
 	if err != nil {
 		return nil, err

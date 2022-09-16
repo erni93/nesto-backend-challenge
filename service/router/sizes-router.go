@@ -8,7 +8,7 @@ import (
 )
 
 type SizesRouter struct {
-	Repository *repository.SizeRepository
+	Repository repository.SizeRepository
 }
 
 func (router *SizesRouter) GetSizesHandler(w http.ResponseWriter, r *http.Request) {

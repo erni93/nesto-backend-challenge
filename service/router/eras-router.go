@@ -8,7 +8,7 @@ import (
 )
 
 type ErasRouter struct {
-	Repository *repository.EraRepository
+	Repository repository.EraRepository
 }
 
 func (router *ErasRouter) GetErasHandler(w http.ResponseWriter, r *http.Request) {
