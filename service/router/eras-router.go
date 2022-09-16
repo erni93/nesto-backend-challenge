@@ -11,6 +11,7 @@ type ErasRouter struct {
 	Repository repository.EraRepository
 }
 
+// Returns a list of eras
 func (router *ErasRouter) GetErasHandler(w http.ResponseWriter, r *http.Request) {
 	eras, err := router.Repository.GetEras()
 	if err != nil {

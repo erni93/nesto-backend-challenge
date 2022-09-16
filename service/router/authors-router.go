@@ -11,6 +11,7 @@ type AuthorsRouter struct {
 	Repository repository.AuthorRepository
 }
 
+// Returns a list of authors
 func (router *AuthorsRouter) GetAuthorsHandler(w http.ResponseWriter, r *http.Request) {
 	authors, err := router.Repository.GetAuthors()
 	if err != nil {

@@ -109,7 +109,7 @@ There are some integration tests at `main_test.go`, those tests are executed dir
 
 You will need some environment variables defined in your machine in order to be able to connect with the database, check `docker-compose.yml` for some examples (backend-api configuration)
 
-How to run all tests
+How to run integration tests (necessary a valid connection with the DB)
 
 ```bash
 $ go -timeout 30s -run ^(TestGetAuthors|TestGetBooks|TestGetBooksWithFilters|TestGetEras|TestGetGenres|TestGetSizes)$ backend-api
@@ -124,3 +124,20 @@ This backend microservice has been added to docker-compose, just run
 ```bash
 $ docker-compose up --build
 ```
+## Structure
+
+The project is structured using the repository pattern to retrieve the information from the data base. There is one repository model for each table in the database.
+
+Each endpoint of the API has a handler function to build the http response and retrieve the data from the repository.
+
+## Resources
+
+External libraries that have been used
+
+* go-sqlmock : For creating a mockup of the DB model
+
+* squirrel : SQL query builder
+
+* mux : http server router handler
+
+* lib/pq : postgreSQL driver

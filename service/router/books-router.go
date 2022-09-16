@@ -17,6 +17,7 @@ type BooksRouter struct {
 	Repository repository.BookRepository
 }
 
+// Returns a list of books filtering by different parameters in the GET request
 func (router *BooksRouter) GetBooksHandler(w http.ResponseWriter, r *http.Request) {
 	filters, err := getFilters(r)
 	if err != nil {

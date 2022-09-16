@@ -11,6 +11,7 @@ type SizesRouter struct {
 	Repository repository.SizeRepository
 }
 
+// Returns a list of sizes
 func (router *SizesRouter) GetSizesHandler(w http.ResponseWriter, r *http.Request) {
 	sizes, err := router.Repository.GetSizes()
 	if err != nil {

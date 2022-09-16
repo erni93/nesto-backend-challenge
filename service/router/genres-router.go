@@ -11,6 +11,7 @@ type GenresRouter struct {
 	Repository repository.GenreRepository
 }
 
+// Returns a list of genres
 func (router *GenresRouter) GetGenresHandler(w http.ResponseWriter, r *http.Request) {
 	genres, err := router.Repository.GetGenres()
 	if err != nil {

@@ -16,6 +16,7 @@ var (
 	dbname   = os.Getenv("PSQL-DBNAME")
 )
 
+// Create a new DB connection reading the environment variables
 func GetConnection() (*sql.DB, error) {
 	psqlInfo := fmt.Sprintf("host=%s port=%s user=%s "+
 		"password=%s dbname=%s sslmode=disable",
